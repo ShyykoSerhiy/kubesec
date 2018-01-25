@@ -33,6 +33,12 @@ so much more user-friendly (+ you can ascertain that specific entry is present e
 
 #### macOS / Linux
 
+For macOS make sure that you have that you have GPG (GNU Privacy Guard) installed. 
+```sh
+# making sure that GPG (GNU Privacy Guard) is installed on macOS
+brew install gnupg
+```
+
 ```sh
 curl -sSL https://github.com/shyiko/kubesec/releases/download/0.4.2/kubesec-0.4.2-$(
     bash -c '[[ $OSTYPE == darwin* ]] && echo darwin || echo linux'
